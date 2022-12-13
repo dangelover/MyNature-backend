@@ -5,7 +5,7 @@ class Server {
   constructor() {
     //creamos una instancia de express, cuando se lance se creara como una propiedad del constructor
     this.app = express();
-    this.port = process.env.PORT;
+    this.port = process.env.PORT || 3000;
     this.usuariosPath = "/api/usuarios";
     //Middlewares
     this.middleware();
